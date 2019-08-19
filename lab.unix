@@ -1,0 +1,306 @@
+(base) student@ghtp-OptiPlex-3020:~$ cd JS206
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cd
+(base) student@ghtp-OptiPlex-3020:~$ cd JS206
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ls
+js  jss  sample  sample1  sample2  sample3  zyx
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps
+  PID TTY          TIME CMD
+ 3832 pts/2    00:00:00 bash
+ 3868 pts/2    00:00:00 ps
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+student   3832  3825  0 15:52 pts/2    00:00:00 bash
+student   3951  3832  0 15:58 pts/2    00:00:00 ps -f
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps 3832
+  PID TTY      STAT   TIME COMMAND
+ 3832 pts/2    Ss     0:00 bash
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps -a
+  PID TTY          TIME CMD
+ 4283 pts/2    00:00:00 ps
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps
+  PID TTY          TIME CMD
+ 3832 pts/2    00:00:00 bash
+ 4293 pts/2    00:00:00 ps
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps -a
+  PID TTY          TIME CMD
+ 4294 pts/2    00:00:00 ps
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ps -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+student   3832  3825  0 15:52 pts/2    00:00:00 bash
+student   4305  3832  0 16:09 pts/2    00:00:00 ps -f
+(base) student@ghtp-OptiPlex-3020:~/JS206$ pidof firefox
+4200 4117 2456 2397 2314
+(base) student@ghtp-OptiPlex-3020:~/JS206$ pidof Amazon
+(base) student@ghtp-OptiPlex-3020:~/JS206$ pidof files
+(base) student@ghtp-OptiPlex-3020:~/JS206$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+udev             1948308        0   1948308   0% /dev
+tmpfs             395696     6208    389488   2% /run
+/dev/sda1      479605520 19777252 435442632   5% /
+tmpfs            1978472    27960   1950512   2% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+tmpfs            1978472        0   1978472   0% /sys/fs/cgroup
+tmpfs             395696       80    395616   1% /run/user/1001
+(base) student@ghtp-OptiPlex-3020:~/JS206$ du
+4	./js
+24	.
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ulimit
+unlimited
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ls
+js  jss  sample  sample1  sample2  sample3  zyx
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat a.text
+cat: a.text: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ls
+js  jss  sample  sample1  sample2  sample3  zyx
+(base) student@ghtp-OptiPlex-3020:~/JS206$ vi cat
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat cat.text
+cat: cat.text: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat cat
+
+
+dddddddddd
+vdbkdvb
+vkdkdbdvi
+(base) student@ghtp-OptiPlex-3020:~/JS206$ vi cat2
+(base) student@ghtp-OptiPlex-3020:~/JS206$ mv cat cat2
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cd JK
+bash: cd: JK: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ mkdir JK
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cd JK
+(base) student@ghtp-OptiPlex-3020:~/JS206/JK$ ..
+..: command not found
+(base) student@ghtp-OptiPlex-3020:~/JS206/JK$ cd ..
+(base) student@ghtp-OptiPlex-3020:~/JS206$ mkdir JK2
+(base) student@ghtp-OptiPlex-3020:~/JS206$ mkdir JK3
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cd JK2
+(base) student@ghtp-OptiPlex-3020:~/JS206/JK2$ cd JK3
+bash: cd: JK3: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206/JK2$ cd JK3
+bash: cd: JK3: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206/JK2$ cd nfk/vddvdv/vddv
+bash: cd: nfk/vddvdv/vddv: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206/JK2$ cd ..
+(base) student@ghtp-OptiPlex-3020:~/JS206$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+172.21.17.41             ether   00:23:ae:a4:fa:8f   C                     enp2s0
+172.21.26.156            ether   18:03:73:be:dc:c5   C                     enp2s0
+172.21.28.221            ether   f8:bc:12:a1:1a:6b   C                     enp2s0
+172.21.28.223            ether   b8:ac:6f:2d:53:1b   C                     enp2s0
+172.21.27.10             ether   f8:bc:12:a1:d7:b9   C                     enp2s0
+172.21.28.172            ether   f8:bc:12:a1:18:35   C                     enp2s0
+172.21.27.33             ether   00:23:ae:a7:b8:25   C                     enp2s0
+172.21.26.236            ether   5c:f9:dd:6e:27:7c   C                     enp2s0
+172.21.27.141            ether   b0:83:fe:53:bf:4f   C                     enp2s0
+172.21.26.185            ether   00:23:ae:a7:ec:70   C                     enp2s0
+172.21.27.14             ether   00:23:ae:a7:b9:a9   C                     enp2s0
+172.21.27.166            ether   00:23:ae:a7:b7:a4   C                     enp2s0
+172.21.25.230            ether   f8:bc:12:a1:43:7c   C                     enp2s0
+172.21.28.74             ether   b8:ac:6f:27:fc:ea   C                     enp2s0
+172.21.29.235            ether   b8:ac:6f:28:01:1f   C                     enp2s0
+172.21.26.220            ether   00:23:ae:a7:bb:6d   C                     enp2s0
+172.21.26.192            ether   00:23:ae:a7:bd:0c   C                     enp2s0
+172.21.27.127            ether   50:3e:aa:60:b2:90   C                     enp2s0
+172.21.28.60             ether   b8:ac:6f:27:d9:ba   C                     enp2s0
+172.21.29.221            ether   00:23:ae:a4:f9:4b   C                     enp2s0
+172.21.28.85             ether   00:23:ae:a7:f2:71   C                     enp2s0
+172.21.28.140            ether   00:23:ae:a7:b9:4c   C                     enp2s0
+172.21.27.31             ether   f8:bc:12:a1:23:57   C                     enp2s0
+172.21.26.204            ether   00:23:ae:a7:bb:6a   C                     enp2s0
+172.21.27.54             ether   f8:bc:12:a1:18:53   C                     enp2s0
+172.21.27.111            ether   f8:bc:12:a1:d7:f5   C                     enp2s0
+172.21.21.172            ether   f8:bc:12:a1:d6:98   C                     enp2s0
+hydadc1.gitam.edu        ether   b4:de:31:37:8c:3f   C                     enp2s0
+172.21.27.7              ether   00:23:ae:a7:b9:01   C                     enp2s0
+172.21.17.151            ether   00:23:ae:a7:b8:32   C                     enp2s0
+172.21.26.160            ether   00:23:ae:a7:bc:ff   C                     enp2s0
+172.21.17.176            ether   b8:ac:6f:27:c9:d7   C                     enp2s0
+172.21.17.129            ether   b8:ac:6f:27:fc:bc   C                     enp2s0
+172.21.26.168            ether   00:23:ae:a7:bd:c0   C                     enp2s0
+172.21.29.83             ether   48:5a:b6:d4:a6:2b   C                     enp2s0
+172.21.26.246            ether   f8:bc:12:a1:20:4c   C                     enp2s0
+172.21.24.109            ether   b8:ac:6f:34:2e:1f   C                     enp2s0
+172.21.16.181            ether   f8:bc:12:a1:43:8a   C                     enp2s0
+172.21.16.1              ether   b4:de:31:37:8c:3f   C                     enp2s0
+172.21.25.113            ether   f8:bc:12:a1:18:4d   C                     enp2s0
+172.21.27.182            ether   f8:bc:12:9f:4b:49   C                     enp2s0
+(base) student@ghtp-OptiPlex-3020:~/JS206$ arp -a
+? (172.21.17.41) at 00:23:ae:a4:fa:8f [ether] on enp2s0
+? (172.21.26.156) at 18:03:73:be:dc:c5 [ether] on enp2s0
+? (172.21.28.221) at f8:bc:12:a1:1a:6b [ether] on enp2s0
+? (172.21.28.223) at b8:ac:6f:2d:53:1b [ether] on enp2s0
+? (172.21.27.10) at f8:bc:12:a1:d7:b9 [ether] on enp2s0
+? (172.21.28.172) at f8:bc:12:a1:18:35 [ether] on enp2s0
+? (172.21.27.33) at 00:23:ae:a7:b8:25 [ether] on enp2s0
+? (172.21.26.236) at 5c:f9:dd:6e:27:7c [ether] on enp2s0
+? (172.21.27.141) at b0:83:fe:53:bf:4f [ether] on enp2s0
+? (172.21.26.185) at 00:23:ae:a7:ec:70 [ether] on enp2s0
+? (172.21.27.14) at 00:23:ae:a7:b9:a9 [ether] on enp2s0
+? (172.21.27.166) at 00:23:ae:a7:b7:a4 [ether] on enp2s0
+? (172.21.25.230) at f8:bc:12:a1:43:7c [ether] on enp2s0
+? (172.21.28.74) at b8:ac:6f:27:fc:ea [ether] on enp2s0
+? (172.21.29.235) at b8:ac:6f:28:01:1f [ether] on enp2s0
+? (172.21.26.220) at 00:23:ae:a7:bb:6d [ether] on enp2s0
+? (172.21.26.192) at 00:23:ae:a7:bd:0c [ether] on enp2s0
+? (172.21.27.127) at 50:3e:aa:60:b2:90 [ether] on enp2s0
+? (172.21.28.60) at b8:ac:6f:27:d9:ba [ether] on enp2s0
+? (172.21.29.221) at 00:23:ae:a4:f9:4b [ether] on enp2s0
+? (172.21.28.85) at 00:23:ae:a7:f2:71 [ether] on enp2s0
+? (172.21.28.140) at 00:23:ae:a7:b9:4c [ether] on enp2s0
+? (172.21.27.31) at f8:bc:12:a1:23:57 [ether] on enp2s0
+? (172.21.26.204) at 00:23:ae:a7:bb:6a [ether] on enp2s0
+? (172.21.27.54) at f8:bc:12:a1:18:53 [ether] on enp2s0
+? (172.21.26.206) at f8:bc:12:a1:3c:6d [ether] on enp2s0
+? (172.21.27.111) at f8:bc:12:a1:d7:f5 [ether] on enp2s0
+? (172.21.21.172) at f8:bc:12:a1:d6:98 [ether] on enp2s0
+hydadc1.gitam.edu (172.21.255.12) at b4:de:31:37:8c:3f [ether] on enp2s0
+? (172.21.27.7) at 00:23:ae:a7:b9:01 [ether] on enp2s0
+? (172.21.27.138) at f8:bc:12:a1:d9:89 [ether] on enp2s0
+? (172.21.17.151) at 00:23:ae:a7:b8:32 [ether] on enp2s0
+? (172.21.26.160) at 00:23:ae:a7:bc:ff [ether] on enp2s0
+? (172.21.17.176) at b8:ac:6f:27:c9:d7 [ether] on enp2s0
+? (172.21.17.129) at b8:ac:6f:27:fc:bc [ether] on enp2s0
+? (172.21.26.168) at 00:23:ae:a7:bd:c0 [ether] on enp2s0
+? (172.21.29.83) at 48:5a:b6:d4:a6:2b [ether] on enp2s0
+? (172.21.26.246) at f8:bc:12:a1:20:4c [ether] on enp2s0
+? (172.21.24.109) at b8:ac:6f:34:2e:1f [ether] on enp2s0
+? (172.21.16.181) at f8:bc:12:a1:43:8a [ether] on enp2s0
+? (172.21.16.1) at b4:de:31:37:8c:3f [ether] on enp2s0
+? (172.21.25.113) at f8:bc:12:a1:18:4d [ether] on enp2s0
+? (172.21.27.182) at f8:bc:12:9f:4b:49 [ether] on enp2s0
+(base) student@ghtp-OptiPlex-3020:~/JS206$ who
+student  tty7         2019-08-19 15:38 (:0)
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > ok
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+(base) student@ghtp-OptiPlex-3020:~/JS206$ 
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok2
+cat: ok2: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > ok2
+ghivikdl
+kjhjkddjk
+uscfihllkf
+wsfofjlfkl;
+gkjehekjhfe
+dkjbdjkbdj
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok2
+ghivikdl
+kjhjkddjk
+uscfihllkf
+wsfofjlfkl;
+gkjehekjhfe
+dkjbdjkbdj
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok ok2 file
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+ghivikdl
+kjhjkddjk
+uscfihllkf
+wsfofjlfkl;
+gkjehekjhfe
+dkjbdjkbdj
+cat: file: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat filr
+cat: filr: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat filr
+cat: filr: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat file
+cat: file: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat file
+cat: file: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat ok ok2 >  file
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat file
+jefggjkrg
+vfhsfjhbfkj
+kbfj jvhd hkdf
+46544646
+dfnnknd
+hkfdhbkbkfd
+lkdkndlkdn
+ndvlnlkdnkldn kjfdnkjdf 
+kbdkndk kjfnvjkkdv dlfjn
+56656
+:wq
+sdsd
+ghivikdl
+kjhjkddjk
+uscfihllkf
+wsfofjlfkl;
+gkjehekjhfe
+dkjbdjkbdj
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ 
