@@ -1,0 +1,203 @@
+(base) student@ghtp-OptiPlex-3020:~$ cd JS206
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ls
+cat2  f1  file  JK  JK2  JK3  js  jss  ok  ok2  sample  sample1  sample2  sample3  zyx
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cd cat >  g1.txt
+bash: cd: cat: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat -n g2.txt
+     1	GITAM
+     2	University
+     3	Hyderabad
+     4	Bangalore
+     5	Vizag
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat >> g2.txt
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat -e g2.txt
+GITAM$
+University$
+Hyderabad$
+Bangalore$
+Vizag$
+AP$
+Karnataka$
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > g23.txt
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt g23.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g23.txt
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ -s g2.txt
+-s: command not found
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat -s g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt g23.txt > g69.txt
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g69.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ tac g2.txt
+Karnataka
+AP
+Vizag
+Bangalore
+Hyderabad
+University
+GITAM
+(base) student@ghtp-OptiPlex-3020:~/JS206$ head -2 g2.txt
+GITAM
+University
+(base) student@ghtp-OptiPlex-3020:~/JS206$ tail -3 g2.txt
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g23.txt
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > g699.txt
+69
+699
+6999
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > g699.txt
+643
+
+
+
+
+654456
+564
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat -s g699.txt
+643
+
+654456
+564
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ wc g2.txt
+ 7  7 56 g2.txt
+(base) student@ghtp-OptiPlex-3020:~/JS206$ uniq g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ sort 2.txt
+sort: cannot read: 2.txt: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ sort g2.txt
+AP
+Bangalore
+GITAM
+Hyderabad
+Karnataka
+University
+Vizag
+(base) student@ghtp-OptiPlex-3020:~/JS206$ sort -m g2.txt g23.txt
+GITAM
+Studemts
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g2.txt
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat 23.txt
+cat: 23.txt: No such file or directory
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g23.txt
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat g30.txt g2.txt g23.txt
+cat: g30.txt: No such file or directory
+GITAM
+University
+Hyderabad
+Bangalore
+Vizag
+AP
+Karnataka
+Studemts
+(base) student@ghtp-OptiPlex-3020:~/JS206$ cat > g30.txt
+(base) student@ghtp-OptiPlex-3020:~/JS206$ paste g2.txt g23.txt
+GITAM	Studemts
+University	
+Hyderabad	
+Bangalore	
+Vizag	
+AP	
+Karnataka	
+(base) student@ghtp-OptiPlex-3020:~/JS206$ grep gitam g2.txt
+(base) student@ghtp-OptiPlex-3020:~/JS206$ grep GITAM g2.txt
+GITAM
+(base) student@ghtp-OptiPlex-3020:~/JS206$ grep GITAM g2.txt g23.txt
+g2.txt:GITAM
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ ^C
+(base) student@ghtp-OptiPlex-3020:~/JS206$ 
